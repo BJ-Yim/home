@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        .dan{
+            display: inline-block;
+            float: left;
+            margin-top: 20px;
+            color: #646f81;
+            font-size: 16px;
+        }
+        /* 大盒子 */
+        .warningTask-box{
+            width: 300px;
+            float: left;
+            margin-top: 20px;
+            position: relative;
+        }
+        /* 问号 */
+        .question-mark{
+            display: inline-block;
+            width: 18px;
+            height: 18px;
+            border: 1.4px solid #BEBEBE;
+            border-radius: 18px;
+            font-size: 16px;
+            color: #BEBEBE;
+            line-height: 18px;
+            text-align: center;
+            cursor: pointer;
+            margin-left: 4px;
+        }
+        /* 提示框 */
+        .warningTask-Tip{
+            width: 300px;
+            min-height: 160px;
+            border: 1px solid #BEBEBE;
+            background-color: #fff;
+            border-radius: 4px;
+            display: inline-block;
+            position: absolute;
+            left: 38px;
+            top: -20px;
+            padding: 10px;
+            color: #616161;
+            display: none;
+        }
+        .question-mark:hover+.warningTask-Tip{
+            display: inline-block;
+        }
+        .warningTask-Tip:before{
+            position: absolute;
+            content: "";
+            width: 0;
+            height: 0;
+            right: 320px;
+            top: 20px;
+            border-right: 10px solid #BEBEBE;
+            border-top: 10px solid transparent;
+            border-bottom: 10px solid transparent;
+        }
+        .warningTask-Tip:after{
+            position: absolute;
+            content: "";
+            width: 0;
+            height: 0;
+            right: 321px;
+            top: 23px;
+            border-right: 7px solid #fff;
+            border-top: 7px solid transparent;
+            border-bottom: 7px solid transparent;
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="dan">语文 (单评)</div>
+    <div class="warningTask-box">
+        <div class="question-mark">?</div>
+        <div class="warningTask-Tip">
+        </div>
+    </div>
+</body>
+<script>
+
+</script>
+</html>
